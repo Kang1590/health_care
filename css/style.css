@@ -1,0 +1,151 @@
+@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1200px;
+  margin: auto;
+  color: #666666;
+}
+a {
+  color: #666666;
+  text-decoration: none;
+}
+img {
+  display: block;
+  width: 100%;
+}
+
+/* 헤더부분 */
+#logo {
+  margin-left: 20px;
+}
+header {
+  display: flex;
+  padding: 20px 0;
+}
+
+header nav {
+  flex: 1;
+  padding-right: 20px;
+}
+header nav a {
+  float: right;
+  margin-top: 20px;
+  padding: 10px 30px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+header nav a:hover {
+  background: #e3428e;
+  color: white;
+}
+
+/* 메인부분 */
+main {
+  display: flex;
+  margin-top: 50px;
+}
+/* 공지사항 */
+#notice {
+  flex: 0.5;
+  margin-right: 50px;
+  padding-left: 40px;
+}
+#notice h3 {
+  border-bottom: 5px solid #ddd;
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+}
+#notice ol li {
+  list-style: none;
+}
+
+#notice a:hover {
+  text-decoration: underline;
+  color: #e3428e;
+}
+#notice span {
+  float: right;
+}
+
+/* 협력사 콘텐츠 */
+#partner {
+  flex: 0.4;
+  margin-right: 50px;
+}
+#partner h3 {
+  border-bottom: 5px solid #ddd;
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+}
+#partner img {
+  margin: auto;
+  width: 350px;
+}
+#partner .information {
+  display: flex;
+  margin-top: 30px;
+}
+#partner .information > div {
+  background: #888;
+  color: white;
+  border-radius: 100%;
+  padding: 10% 15%;
+  margin: 0 65px 0 50px;
+  position: relative;
+}
+#partner .information > div > b {
+  position: absolute;
+  top: 25%;
+  left: 5%;
+  font-size: 1.3rem;
+  text-align: center;
+}
+#partner ul {
+  margin-top: 10px;
+  margin-right: 50px;
+  line-height: 180%;
+  font-size: 0.8rem;
+}
+
+/* 아이콘 */
+#icon {
+  flex: 0.1;
+  padding-right: 40px;
+  margin-top: 10px;
+}
+#icon img {
+  margin-bottom: 10px;
+}
+
+/* footer부분 */
+footer {
+  display: flex;
+  background: #ddd;
+  margin-bottom: 20px;
+  padding: 20px;
+  line-height: 180%;
+  font-weight: bold;
+}
+footer .left {
+  flex: 1;
+}
+footer .left a {
+  display: block;
+}
+footer .left a:hover {
+  text-decoration: underline;
+  color: #e3428e;
+}
+
+footer .center {
+  flex: 1;
+}
+footer .right {
+  flex: 1;
+}
